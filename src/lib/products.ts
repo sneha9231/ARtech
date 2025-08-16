@@ -37,13 +37,13 @@ export const products: Product[] = [
     images: [
       {
         id: "fl-main",
-        src: "/products/fiber-laser-3000w/main.jpg",
+        src: "/products/Laser-Belding/Laser Belding machine 1.jpeg",
         alt: "Fiber Laser Cutting Machine 3000W - Main View",
         isPrimary: true
       },
       {
         id: "fl-control",
-        src: "/products/fiber-laser-3000w/control-panel.jpg",
+        src: "/products/Laser-Belding/Laser Belding machine 2.jpeg",
         alt: "Advanced Control Panel with Touch Screen Interface"
       },
       {
