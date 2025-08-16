@@ -139,15 +139,15 @@ export default function Footer() {
 
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <a href="tel:+15551234567" className="text-gray-400 hover:text-white transition-colors">
-                  +1 (555) 123-4567
+                <a href="tel:+91 9997360023" className="text-gray-400 hover:text-white transition-colors">
+                +91 9997360023
                 </a>
               </div>
 
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <a href="mailto:info@precisionlaser.com" className="text-gray-400 hover:text-white transition-colors">
-                  info@precisionlaser.com
+                <a href="mailto:ar.technology107@gmail.com" className="text-gray-400 hover:text-white transition-colors">
+                ar.technology107@gmail.com
                 </a>
               </div>
             </div>

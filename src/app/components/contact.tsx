@@ -27,8 +27,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Phone Number</h4>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-sm text-gray-500">Mon-Fri, 8AM-6PM EST</p>
+                    <p className="text-gray-600">+91 9997360023</p>
+                    <p className="text-sm text-gray-500">Mon-Sat, 8AM-6PM IST</p>
                   </div>
                 </div>
 
@@ -39,8 +39,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email Address</h4>
-                    <p className="text-gray-600">info@precisionlaser.com</p>
-                    <p className="text-sm text-gray-500">We respond within 24 hours</p>
+                    <p className="text-gray-600">ar.technology107@gmail.com</p>
+                    <p className="text-sm text-gray-500">We respond within 4 hours</p>
                   </div>
                 </div>
 
