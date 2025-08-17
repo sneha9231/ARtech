@@ -1,3 +1,5 @@
+"use client"
+
 import { notFound } from "next/navigation"
 import { getProductById } from "@/lib/products"
 import { ProductGallery } from "@/components/ui/product-gallery"
@@ -141,9 +143,13 @@ export default function ProductPage({ params }: ProductPageProps) {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="flex-1 bg-blue-600 hover:bg-blue-700 text-white">
+              <Button 
+                size="lg" 
+                className="flex-1 bg-blue-600 hover:bg-blue-700 text-white"
+                onClick={() => window.location.href = 'tel:+919997360023'}
+              >
                 <Phone className="w-4 h-4 mr-2" />
-                Get Quote
+                Call +91 9997360023
               </Button>
               <Button size="lg" variant="outline" className="flex-1">
                 <Mail className="w-4 h-4 mr-2" />

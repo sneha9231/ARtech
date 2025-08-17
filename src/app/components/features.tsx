@@ -20,7 +20,7 @@ export default function Features() {
           <div className="order-2 lg:order-1">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/placeholder.svg?height=500&width=600"
+                src="/products/Fiber/Fiber laser cutting machine double pallet.jpeg"
                 alt="Laser cutting machine cutting metal sheet"
                 className="w-full h-full object-cover"
               />

@@ -1,183 +1,160 @@
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Youtube } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Facebook, Youtube, Linkedin, Instagram } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Footer Content */}
-        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-6">
-            <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">LC</span>
-                </div>
-                <span className="text-xl font-bold">Precision Laser</span>
+          <div className="space-y-4">
+            <div className="flex items-center space-x-3">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm sm:text-lg">AT</span>
               </div>
-              <p className="text-gray-400 leading-relaxed">
-                Leading provider of high-precision laser cutting solutions for industrial manufacturing. Quality,
-                precision, and reliability in every cut.
-              </p>
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold">ArTech</h3>
+                <p className="text-xs sm:text-sm text-gray-400">Industrial Solutions</p>
+              </div>
             </div>
-
-            {/* Social Links */}
+            <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
+              Leading supplier of advanced laser cutting, welding, and CNC machinery for industrial applications. 
+              Quality equipment backed by expert support and competitive pricing.
+            </p>
             <div className="flex space-x-4">
-              <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
-              >
-                <Facebook className="w-5 h-5" />
+              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
-              >
-                <Twitter className="w-5 h-5" />
+              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Youtube className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
+              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
-              >
-                <Youtube className="w-5 h-5" />
+              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
-            <ul className="space-y-3">
+          <div className="space-y-4">
+            <h4 className="text-base sm:text-lg font-semibold">Quick Links</h4>
+            <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/#home" className="text-gray-300 hover:text-blue-400 transition-colors text-xs sm:text-sm">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#products" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/#products" className="text-gray-300 hover:text-blue-400 transition-colors text-xs sm:text-sm">
                   Products
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/#services" className="text-gray-300 hover:text-blue-400 transition-colors text-xs sm:text-sm">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-white transition-colors">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/#about" className="text-gray-300 hover:text-blue-400 transition-colors text-xs sm:text-sm">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Support
-                </a>
+                <Link href="/#contact" className="text-gray-300 hover:text-blue-400 transition-colors text-xs sm:text-sm">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Our Services</h3>
-            <ul className="space-y-3">
+          {/* Products */}
+          <div className="space-y-4">
+            <h4 className="text-base sm:text-lg font-semibold">Our Products</h4>
+            <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Fiber Laser Cutting
-                </a>
+                <Link href="/products/fiber-laser-double-pallet" className="text-gray-300 hover:text-blue-400 transition-colors text-xs sm:text-sm">
+                  Fiber Laser Machines
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  CO2 Laser Cutting
-                </a>
+                <Link href="/products/co2-laser-cutting" className="text-gray-300 hover:text-blue-400 transition-colors text-xs sm:text-sm">
+                  CO2 Laser Systems
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Metal Fabrication
-                </a>
+                <Link href="/products/cnc-bending-machine" className="text-gray-300 hover:text-blue-400 transition-colors text-xs sm:text-sm">
+                  CNC Bending Machines
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Custom Parts
-                </a>
+                <Link href="/products/tube-cutting-machine" className="text-gray-300 hover:text-blue-400 transition-colors text-xs sm:text-sm">
+                  Tube Cutting Equipment
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Laser Engraving
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Technical Support
-                </a>
+                <Link href="/products/laser-welding-machine" className="text-gray-300 hover:text-blue-400 transition-colors text-xs sm:text-sm">
+                  Laser Welding Systems
+                </Link>
               </li>
             </ul>
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Contact Info</h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
-                <div className="text-gray-400">
-                  <p>123 Industrial Boulevard</p>
-                  <p>Manufacturing District</p>
-                  <p>City, State 12345</p>
+          <div className="space-y-4">
+            <h4 className="text-base sm:text-lg font-semibold">Contact Info</h4>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <Phone className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                <div>
+                  <p className="text-xs sm:text-sm text-gray-300">+91 9997360023</p>
+                  <p className="text-xs text-gray-400">24/7 Support</p>
                 </div>
               </div>
-
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <a href="tel:+91 9997360023" className="text-gray-400 hover:text-white transition-colors">
-                +91 9997360023
-                </a>
+                <Mail className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                <div>
+                  <p className="text-xs sm:text-sm text-gray-300">ar.technology107@gmail.com</p>
+                  <p className="text-xs text-gray-400">Sales & Support</p>
+                </div>
               </div>
-
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <a href="mailto:ar.technology107@gmail.com" className="text-gray-400 hover:text-white transition-colors">
-                ar.technology107@gmail.com
-                </a>
+                <MapPin className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                <div>
+                  <p className="text-xs sm:text-sm text-gray-300">Mainpuri, Uttar Pradesh</p>
+                  <p className="text-xs text-gray-400">India</p>
+                </div>
               </div>
-            </div>
-
-            {/* Business Hours */}
-            <div className="mt-6">
-              <h4 className="font-medium text-white mb-2">Business Hours</h4>
-              <div className="text-sm text-gray-400 space-y-1">
-                <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
-                <p>Saturday: 9:00 AM - 4:00 PM</p>
-                <p>Sunday: Closed</p>
+              <div className="flex items-center space-x-3">
+                <Clock className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                <div>
+                  <p className="text-xs sm:text-sm text-gray-300">Monday - Sunday: 24/7</p>
+                  <p className="text-xs text-gray-400">Available</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Footer */}
-        <div className="border-t border-gray-800 py-8">
+        {/* Bottom Section */}
+        <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-gray-400 text-sm">© 2024 Precision Laser Cutting. All rights reserved.</div>
-            <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <div className="text-center md:text-left">
+              <p className="text-gray-400 text-xs sm:text-sm">
+                © 2024 ArTech Industrial Solutions. All rights reserved.
+              </p>
+            </div>
+            <div className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm">
+              <Link href="/privacy" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              </Link>
+              <Link href="/terms" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Terms of Service
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Cookie Policy
-              </a>
+              </Link>
+              <Link href="/sitemap" className="text-gray-400 hover:text-blue-400 transition-colors">
+                Sitemap
+              </Link>
             </div>
           </div>
         </div>
