@@ -44,7 +44,7 @@ export default function About() {
               </h2>
               <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">
                 ArTech is a leading supplier of advanced industrial machinery, specializing in laser cutting, 
-                welding, and CNC equipment. We've been serving the manufacturing industry for over a decade, 
+                welding, and CNC equipment. We haeen serving the manufacturing industry for over a decade, 
                 providing cutting-edge technology solutions that drive productivity and efficiency.
               </p>
               <p className="text-slate-600 leading-relaxed text-base sm:text-lg">
