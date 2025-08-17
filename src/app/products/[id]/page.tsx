@@ -1,5 +1,6 @@
 "use client"
 
+import { use } from "react"
 import { notFound } from "next/navigation"
 import { getProductById } from "@/lib/products"
 import { ProductGallery } from "@/components/ui/product-gallery"
@@ -9,13 +10,14 @@ import { ArrowLeft, Phone, Mail, Download, Star, Clock, DollarSign, CheckCircle 
 import Link from "next/link"
 
 interface ProductPageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 export default function ProductPage({ params }: ProductPageProps) {
-  const product = getProductById(params.id)
+  const { id } = use(params)
+  const product = getProductById(id)
 
   if (!product) {
     notFound()
