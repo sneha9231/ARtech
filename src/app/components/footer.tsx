@@ -80,6 +80,9 @@ export default function Footer() {
               <Link href="/products/laser-welding" className="block text-slate-300 hover:text-blue-400 transition-colors duration-300 text-sm sm:text-base">
                 Laser Welding Machines
               </Link>
+              <Link href="/products/co2-laser" className="block text-slate-300 hover:text-blue-400 transition-colors duration-300 text-sm sm:text-base">
+               Laser Marking Machines
+              </Link>
             </div>
           </div>
 

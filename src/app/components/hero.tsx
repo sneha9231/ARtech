@@ -96,15 +96,15 @@ export default function Hero() {
             {/* Trust Indicators */}
             <div className="flex flex-wrap items-center gap-8 pt-6 border-t border-white/10">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-blue-400">10+</div>
+              <div className="text-2xl sm:text-3xl font-bold text-white">10+</div>
                 <div className="text-sm text-slate-400 font-medium">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-blue-400">500+</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white-400">500+</div>
                 <div className="text-sm text-slate-400 font-medium">Machines Sold</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-blue-400">24/7</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white-400">24/7</div>
                 <div className="text-sm text-slate-400 font-medium">Support</div>
               </div>
             </div>

@@ -196,7 +196,7 @@ export const products: Product[] = [
       "Industrial equipment",
       "Metal furniture frames"
     ],
-    priceRange: "₹8,00,000 - ₹15,00,000",
+    priceRange: "₹14,00,000 - ₹23,00,000",
     leadTime: "4-6 weeks",
     certifications: ["CE", "ISO 9001"],
     isFeatured: false,
@@ -244,7 +244,7 @@ export const products: Product[] = [
       "Electronics manufacturing",
       "Precision engineering"
     ],
-    priceRange: "₹35,00,000 - ₹60,00,000",
+    priceRange: "₹4,00,000 - ₹8,00,000",
     leadTime: "10-14 weeks",
     certifications: ["CE", "ISO 9001", "Laser Safety Class 1"],
     isFeatured: true,

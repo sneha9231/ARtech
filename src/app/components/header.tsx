@@ -20,9 +20,9 @@ export default function Header() {
                 alt="ArTech Logo" 
                 className="h-8 w-auto sm:h-12 object-contain"
               />
-              <div className="hidden sm:block">
-                <span className="text-lg sm:text-xl font-bold text-gray-900">ArTech</span>
-                <p className="text-xs sm:text-sm text-gray-600">Industrial Solutions</p>
+              <div className="block">
+                <span className="text-sm sm:text-lg md:text-xl font-bold text-gray-900">ArTech</span>
+                <p className="text-xs sm:text-sm text-gray-600 hidden xs:block sm:block">Industrial Solutions</p>
               </div>
             </Link>
           </div>
